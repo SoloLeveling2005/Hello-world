@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux'
-import siteReducer from './site';
+import sites from './site';
 
 const rootReducer = combineReducers({
-    siteReducer
+    sites
 })
 
 export default rootReducer;

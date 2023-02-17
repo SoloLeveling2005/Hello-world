@@ -14,6 +14,9 @@ from api import serializers as django_serializers
 def get_sites(request):
     print("index")
     if request.method == "GET":
-        data = models.Site.objects.all()
-        data_json = django_serializers.SitesSerializer(instance=data, many=True).data
-        return Response(data=data_json, status=status.HTTP_200_OK)
+        try:
+            data = models.Site.objects.all()
+            data_json = django_serializers.SitesSerializer(instance=data, many=True).data
+            return Response(data=data_json, status=status.HTTP_200_OK)
+        except:
+            return Response(status=401)
