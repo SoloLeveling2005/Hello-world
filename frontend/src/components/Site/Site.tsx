@@ -15,15 +15,21 @@ const Site: React.FC<SiteProps> = ({ip, description, title}) => {
             <div className='site-title'>
                 <h2>{title}</h2>
             </div>
-            <div className='site-address'>
+            <div className='site-ip'>
                 <small>{ip}</small>
             </div>
             <div className='site-description'>
-                <p>{description}</p>
+                <p>{cutDescription(description)}</p>
             </div>
         </div>
     )
 }
 
+function cutDescription (description: string): string {
+    if(description.length <= 300) 
+        return description
+
+    return `${description.slice(0, 300)}...` 
+}
 
 export default Site;

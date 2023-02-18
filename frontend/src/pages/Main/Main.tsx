@@ -38,7 +38,7 @@ const Main: React.FC = () => {
                     </div>
                 </div>
             </header>
-            <section className='home-main'>
+            <div className='home-main'>
                 <div className="container">
                     <div className="home-main__inner">
                         <div className="home-main__sites">
@@ -52,7 +52,7 @@ const Main: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     )
 }

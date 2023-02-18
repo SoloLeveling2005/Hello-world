@@ -1,8 +1,4 @@
-.container {
-    max-width: 1310px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
+/* HOME-HEADER */
 
 .home-header {
     height: 74px;
@@ -19,7 +15,7 @@
 
 .home-logo {
     max-width: 200px;
-    padding: 0 50px 0 20px;
+    padding: 0 50px 0 0;
     box-sizing: content-box;
 }
 
@@ -77,4 +73,14 @@
     object-fit: cover;
     object-position: center;
     cursor: pointer;
+}
+
+/* HOME-MAIN */
+
+.home-main {
+    padding: 40px 0;
+}
+
+.home-main__inner {
+    padding: 0 40px;
 }
