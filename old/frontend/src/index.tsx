@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div className='pywebview-drag-region'>This div element can be used to moved or drag your window like a native OS window</div>
+    {/*<div className='pywebview-drag-region'>This div element can be used to moved or drag your window like a native OS window</div>*/}
     <Provider store={store}>
-      <RouterProvider router={router} />
+      {/*<RouterProvider router={router} />*/}
       <App />
     </Provider>
   </React.StrictMode>
